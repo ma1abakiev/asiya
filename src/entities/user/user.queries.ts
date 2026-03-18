@@ -1,7 +1,6 @@
 import {
   editUserProfile,
   emailActivationMutation,
-  getPhoneModels,
   getTokenMutation,
   getUserByUsername,
   loginUserQuery,
@@ -212,9 +211,3 @@ export function useGetUserByUsername(username: string) {
 }
 
 
-export function useGetPhoneModels(){
-  return useQuery({
-    queryKey:keys.getModels(),
-    queryFn: getPhoneModels,
-  })
-}

@@ -45,6 +45,3 @@ export function resetPasswordConfirm(params: { data: UpdatePassword }) {
   return axios.post(`${API}/reset_password_confirm/`, params.data);
 }
 
-export function getPhoneModels(){
-  return axios.get(`${API}/phone-models/`);
-}
